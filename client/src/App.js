@@ -1,11 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+
+import {Route,Routes} from "react-router-dom"
+import Signup from "./Component/Signup";
 
 function App() {
+
+  
   return (
     <div className="App">
 
-      <h1  > heloo </h1>
+      <Routes>
+
+        <Route element={<Signup/>} path="/signup"  />
+
+
+      </Routes>
      
     </div>
   );
