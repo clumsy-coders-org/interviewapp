@@ -6,9 +6,15 @@ import google from "../../Asset/googleicon.png"
 import github from "../../Asset/gitlogo.png"
 import { useFormik } from 'formik';
 import { validationSchema } from "./validation"
+import { useState } from 'react';
+import { ThreeDots } from 'react-loader-spinner'
+
 
 
 function Signup() {
+
+    const [isDisabled, setIsDisabled] = useState(false);
+    // const [spinner, setspinner] = useState(true);
 
 
     const initalValues = {
@@ -31,7 +37,13 @@ function Signup() {
 
         onSubmit: (value) => {
 
+
+
+
             console.log(value)
+
+            setIsDisabled(true)
+
         }
 
 
@@ -162,7 +174,38 @@ function Signup() {
 
                         <div className='w-full flex justify-center mt-5' >
 
-                            <button onClick={handleSubmit} className='w-[150px] h-[35px] bg-blue-700 rounded-md text-white ' > Sign up </button>
+                            <button disabled={isDisabled} style={{ cursor: isDisabled ? 'not-allowed' : 'pointer' }} onClick={handleSubmit} className='  w-[150px] h-[35px] bg-blue-700 rounded-md text-white ' >
+
+
+                                {
+                                    isDisabled ?
+
+                                        <div className='ml-[55px]' >
+
+                                            <ThreeDots
+                                                visible={true}
+                                                height="40"
+                                                width="40"
+                                                color="#141E46"
+                                                radius="9"
+                                                ariaLabel="three-dots-loading"
+                                                wrapperStyle={{}}
+                                                wrapperClass=""
+                                            />
+
+                                        </div>
+
+
+
+                                        :
+                                        <span> Sign Up </span>
+
+                                }
+
+
+
+
+                            </button>
 
 
                         </div>
