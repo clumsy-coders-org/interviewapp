@@ -1,0 +1,61 @@
+/* Ensure the dashboard has the correct background and spacing */
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0D1B2A;
+    padding: 40px;
+    height: 100vh; /* Ensure it covers the full viewport height */
+  }
+  
+  /* Style each card */
+  .card {
+    background-color: #1B263B;
+    border-radius: 15px;
+    padding: 30px 20px;
+    color: white;
+    text-align: center;
+    width: 300px; /* Fixed width for consistent card size */
+    height: 250px; /* Fixed height to control the card size */
+    box-shadow: 0 0 5px rgb(255, 253, 253);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Evenly distribute content vertically */
+  }
+  
+  /* Add hover effect to cards */
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Style the headings inside the cards */
+  .card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  
+  /* Style the text inside the cards */
+  .card p {
+    font-size: 0.9rem;
+    color: #cfd8dc;
+    margin: 10px 0;
+  }
+  
+  /* Style the images */
+  .card img {
+    width: 50px; /* Adjust width for better fit */
+    height: 50px; /* Adjust height for better fit */
+    margin: 0 auto; /* Center the image horizontally */
+    margin-top: 10px; /* Add space between text and image */
+  }
+  
+  /* Ensure the app has the correct global styles */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0D1B2A;
+    color: white;
+  }
+  
