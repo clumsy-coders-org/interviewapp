@@ -1,0 +1,67 @@
+.navbar{
+    background-color: #0D1B2A;
+}
+
+.min-h-screen{
+    background-color: #0D1B2A;
+}
+
+.homepage {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0D1B2A;
+    padding: 40px;
+    height: 100vh;
+  }
+
+  .card {
+    background-color: #1B263B;
+    border-radius: 15px;
+    padding: 30px 20px;
+    color: white;
+    text-align: center;
+    width: 300px; 
+    height: 250px; 
+    box-shadow: 0 0 5px rgb(255, 253, 253);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+  }
+  
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+ 
+  .card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  
+ 
+  .card p {
+    font-size: 0.9rem;
+    color: #cfd8dc;
+    margin: 10px 0;
+  }
+  
+ 
+  .card img {
+    width: 50px; 
+    height: 50px; 
+    margin: 0 auto; 
+    margin-top: 10px; 
+  }
+  
+ 
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0D1B2A;
+    color: white;
+  }
+  
