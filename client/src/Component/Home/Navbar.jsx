@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { IoMdPerson } from "react-icons/io";
 
 const Navbar = ({ username }) => {
   const [showUserDropdown, setShowUserDropdown] = useState(false);
@@ -31,7 +32,7 @@ const Navbar = ({ username }) => {
         {username && <div className="mr-4">{username}</div>}
 
         <div className="relative cursor-pointer" onClick={() => setShowUserDropdown(!showUserDropdown)}>
-          <div className="text-xl">👤</div>
+        <IoMdPerson />
           {showUserDropdown && (
             <div className="absolute right-0 mt-2 bg-white text-black rounded-md shadow-lg">
               <a href="#" className="block px-4 py-2 hover:bg-gray-200 whitespace-nowrap">Sign In</a>
